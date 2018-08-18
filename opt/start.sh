@@ -126,9 +126,7 @@ EOF
 
 rpm -qa|grep zimbra | awk '{print "rpm -e "$1" --nodeps --justdb"}'|sh
 
-wget https://files.zimbra.com/downloads/8.8.9_GA/zcs-8.8.9_GA_3019.RHEL6_64.20180809160254.tgz -O /opt/zimbra-install/zimbra.tar.gz
-
-cd /opt/zimbra-install && tar xfz zimbra.tar.gz && cd zcs-* && ./install.sh -s < /opt/zimbra-install/installZimbra-keystrokes
+cd /opt/zimbra-install/zcs* && ./install.sh -s < /opt/zimbra-install/installZimbra-keystrokes
 
 /opt/zimbra/libexec/zmsetup.pl -c /opt/zimbra-install/installZimbraScript
 

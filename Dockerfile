@@ -11,8 +11,8 @@ RUN yum -y install dnsmasq \
     sudo \
     wget
 
-RUN wget https://files.zimbra.com/downloads/8.8.9_GA/zcs-8.8.9_GA_3019.RHEL6_64.20180809160254.tgz -O /opt/zimbra-install/zimbra.tar.gz
-RUN cd /opt/zimbra-install/ && tar xfz zimbra.tar.gz && rm -f /opt/zimbra-install/zimbra.tar.gz
+RUN cd /opt/zimbra-install && wget https://files.zimbra.com/downloads/8.8.9_GA/zcs-8.8.9_GA_3019.RHEL6_64.20180809160254.tgz && \ 
+    tar xfz zcs-* && rm -f /opt/zimbra-install/*.tar.gz
 
 VOLUME ["/opt/zimbra"]
 
