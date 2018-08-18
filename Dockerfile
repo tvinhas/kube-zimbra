@@ -11,15 +11,15 @@ RUN yum -y install dnsmasq \
     sudo \
     wget
 
+
+COPY opt /opt/
+COPY etc /etc/
+
 RUN cd /opt/zimbra-install && wget https://files.zimbra.com/downloads/8.8.9_GA/zcs-8.8.9_GA_3019.RHEL6_64.20180809160254.tgz && \ 
     tar xfz zcs-* && rm -f /opt/zimbra-install/*.tar.gz
 
 VOLUME ["/opt/zimbra"]
 
 EXPOSE 22 25 465 587 110 143 993 995 80 443 8080 8443 7071
-
-COPY opt /opt/
-
-COPY etc /etc/
 
 CMD ["/bin/bash", "/opt/start.sh", "-d"]
