@@ -15,11 +15,11 @@ With that in mind, our suggestion at this moment would be based on the following
 extremely extensible through exporters for all kinds of services.
 
 * ### InfluxDB
-[InfluxDB](https://influxdata.com/) is a time series database designed to handle high write and query loads. It's a good alternative to
+    [InfluxDB](https://influxdata.com/) is a time series database designed to handle high write and query loads. It's a good alternative to
 Prometheus's default local disk database when we take the high traffic of our application in consideration.
 
 * ### Grafana
-[Grafana](https://grafana.com/) is a tool widely used to create complex dashboards and graphics based on metrics collected by other tools.
+    [Grafana](https://grafana.com/) is a tool widely used to create complex dashboards and graphics based on metrics collected by other tools.
 
 ## Why use them together?
 
