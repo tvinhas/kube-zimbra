@@ -11,7 +11,7 @@ using tools with backed by large and vibrant open source communities.
 With that in mind, our suggestion at this moment would be based on the following tools:
 
 * ### Prometheus
-[Prometheus](https://prometheus.io/) is an open source monitoring and alerting platform that scrapes and stores time series data. It's
+    [Prometheus](https://prometheus.io/) is an open source monitoring and alerting platform that scrapes and stores time series data. It's
 extremely extensible through exporters for all kinds of services.
 
 * ### InfluxDB
